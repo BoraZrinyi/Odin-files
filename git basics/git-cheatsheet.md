@@ -6,9 +6,11 @@ git push
 git push origin main
 (Both accomplish the same goal in this context)
 
+
 Set up your new respiratory :
 git push origin main
 - különben nem ismeri fel a saját könyvtárát
+
 
 Commands related to the workflow:
 git add .
