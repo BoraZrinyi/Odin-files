@@ -1,12 +1,12 @@
 BASIC SYNTAX
 
-Selector {property: value}
-
+**Selector {property: value}**
+--------------------------
 
 
 1 - Universal Selector
 									Mindent kiválaszt, jele *
-									* {tuladonság: érték}
+									Jele a csillag:       * {tuladonság: érték}
 		* {  color: purple;}
 
 2 - Type Selector
@@ -20,7 +20,7 @@ Selector {property: value}
 
 									Egy element több osztályba is tartozhat egyszerre, de csak egy ID-je lehet
 
-									.(pont)osztálynév {tulajdonság:érték}
+									Jele a pont:        .osztálynév {tulajdonság:érték}
 				<!-- index.html -->
 
 		<div class="alert-text">Please agree to our terms of service.</div>
@@ -35,7 +35,7 @@ Selector {property: value}
 
 										Egy elementnek csak egy neve lehet, de egyszerre több osztályba is tartozhat.
 
-										Jele #IDnév { tulajdoság: érték}
+										Jele #:          #IDnév { tulajdoság: érték}
 
 
 				<!-- index.html -->
@@ -50,4 +50,56 @@ Selector {property: value}
 
 										Több elemet összecsoportosíthatsz egy csoportba, és alkalmazhatod rájuk ugyanazt a tulajdonságot.
 
-										
+										Jele a pont:       .csoport1, .csoport2 {tulajdonság: érték}
+				
+					.read, .unread {color: white;	background-color: black;}
+
+					.read {	/* several unique declarations */	}
+
+					.unread {	/* several unique declarations */	}
+
+
+7 - Chaining selectors
+										Kiválasztja azokat a csoportokat, amelyeknek mindkét selector benne van az osztályába/meghatározásában. 
+
+										Jele a pont: 		.slector1.selector2 {tulajdonság: érték}
+
+					.subsection.header {  color: red;}
+
+					.subsection#preview {  color: blue;}
+
+8 - Descendant combinator
+										Kiválasztja azokat az elememeket amelyeknek adott neve van, ÉS egy meghatározott szülőosztályból származnak.
+
+										Jele a pont .szülőclass .class {tulajdonság: érték}
+
+							/* styles.css */
+
+					.ancestor .contents {	/* some declarations */	}
+
+
+
+
+
+
+Properties
+----------
+
+
+1 - Color
+		Name, HEX, RGB, and HSL values
+				-->  {color: red} 
+
+2 - Background color
+		Name, HEX, RGB, and HSL values
+				--> {color: blue} 
+
+3 - Typography
+		Betütípus
+			font-family: "Times New Roman", serif;
+		Betüméret
+			font-size: 22px
+
+4 - Text align
+
+
