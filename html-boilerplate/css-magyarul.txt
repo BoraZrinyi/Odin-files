@@ -1,0 +1,53 @@
+BASIC SYNTAX
+
+Selector {property: value}
+
+
+
+1 - Universal Selector
+									Mindent kiválaszt, jele *
+									* {tuladonság: érték}
+		* {  color: purple;}
+
+2 - Type Selector
+									Kiválasztja az adott típust, és alkalmazzza a megadott tulajdonságot és valuet - jele a typus neve mint itt a div
+
+									div egy üres konténer ami tartalmazhat bármit
+		div {  color: white;}
+
+3 - Class Selector
+									Amikor megadod egy classz nevét, kiválaszthatod az összes elementet ami ahhoz a classz hoz tartozik és adhatsz nekik egységes dizájnt.
+
+									Egy element több osztályba is tartozhat egyszerre, de csak egy ID-je lehet
+
+									.(pont)osztálynév {tulajdonság:érték}
+				<!-- index.html -->
+
+		<div class="alert-text">Please agree to our terms of service.</div>
+
+				/* styles.css */
+
+		.alert-text {  color: red;}
+
+4 - ID Selector
+
+										Amikor egy csoport elementnek ugyanaz a neve, viválaszthatod név szerint őket, és alkalmazhatod ugyanazt a tulajdonságot az összesre aminek ugyanaz a neve.
+
+										Egy elementnek csak egy neve lehet, de egyszerre több osztályba is tartozhat.
+
+										Jele #IDnév { tulajdoság: érték}
+
+
+				<!-- index.html -->
+
+		<div id="title">My Awesome 90's Page</div>
+
+				/* styles.css */
+
+		#title {  background-color: red;}
+
+6 - Grouping Selector
+
+										Több elemet összecsoportosíthatsz egy csoportba, és alkalmazhatod rájuk ugyanazt a tulajdonságot.
+
+										
