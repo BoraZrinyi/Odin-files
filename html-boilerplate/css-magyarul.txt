@@ -131,9 +131,19 @@ Properties
 3 ways to set up CSS for a site
 
 	1 - External CSS
-	2 - Internal CSS (embedded CSS)
-	3 - Inline CSS
+						Be kell linkelni a css-t a html-be, különben nem találja.
+						External CSS is the most common method you will come across, and it involves creating a separate file for the CSS and linking it inside of an HTML’s opening and closing <head> tags with a void <link> element:
 
+											<!-- index.html -->
+
+											<head>
+											<link rel="stylesheet" href="styles.css">
+											</head>
+	2 - Internal CSS (embedded CSS)
+						With the internal method, you place all the rules inside of a pair of opening and closing <style> tags, which are then placed inside of the opening and closing <head> tags of your HTML file. Since the styles are being placed directly inside of the <head> tags, we no longer need a <link> element that the external method requires.
+	3 - Inline CSS
+						Beírod a stílust az első > elé.
+						<button style="background-color: orange; font-size: 18;">Inline Method</button>
 
 
 
