@@ -9,7 +9,8 @@ Notes-collction
 Learning steps-by-steps
 
 
-
+# Bold text in .md
+Not bold text in .md
 
 
 
