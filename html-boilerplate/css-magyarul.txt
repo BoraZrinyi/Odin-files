@@ -1,7 +1,21 @@
-BASIC SYNTAX
+A html fejlécébe be kell linkelni a styles.ccs-t, különben nem működik!!!!
 
-**Selector {property: value}**
---------------------------
+
+				<!-- index.html -->
+
+				<head>
+				<link rel="stylesheet" href="styles.css">
+				</head>
+
+
+
+
+# BASIC SYNTAX
+
+Selectors
+--------
+									Selector {property: value}
+
 
 
 1 - Universal Selector
@@ -88,18 +102,69 @@ Properties
 
 1 - Color
 		Name, HEX, RGB, and HSL values
-				-->  {color: red} 
+				{color: red} 
 
 2 - Background color
 		Name, HEX, RGB, and HSL values
-				--> {color: blue} 
+				{bckground-color: blue} 
+				h1 {  color: black;  background-color: rgb(197 93 161);}
+
 
 3 - Typography
 		Betütípus
 			font-family: "Times New Roman", serif;
 		Betüméret
 			font-size: 22px
+		Betüvastagság
+			font-weight: bold
+			or
+			font-weight: 700
+		Text align
+			text-align: center
 
-4 - Text align
+4 - Pictures
+		img {  height: auto;  width: 500px; }
+
+
+
+
+3 ways to set up CSS for a site
+
+	1 - External CSS
+	2 - Internal CSS (embedded CSS)
+	3 - Inline CSS
+
+
+
+
+
+Data types
+----------
+			<integer>	An <integer> is a whole number such as 1024 or -55.
+
+			<number>	A <number> represents a decimal number — it may or may not have a decimal point with a fractional component. For example, 0.255, 128, or -1.2.
+
+			<dimension>	A <dimension> is a <number> with a unit attached to it. For example, 45deg, 5s, or 10px. <dimension> is an umbrella category that includes the <length>, <angle>, <time>, and <resolution> types.
+
+			<percentage>	A <percentage> represents a fraction of some other value. For example, 50%. Percentage values are always relative to another quantity. For example, an element's length is relative to its parent element's length.
+
+
+
+Relative sizes
+			px - 		EZ fix méret, nem változik amikor valami más változik, sem a viewport változik
+			vh or vw - 	ITT A vieport változása megváltoztatja az elem méretét
+			em - 		EZ relative az elemben tartozkodó betümérettel. Ha a betüméret nő, 
+						a szövegdoboz vagy az element mérete automatikusan nő, 
+						Amikor egymásha nest elementeket, akkor lépésről-lépésre kisebb vagy nagyobbá válik a lista méret
+			rem - 		EZ OLYAN mint az em, de minden a gyökérelem méretéhez igazodik
+
+						the em unit means "my parent element's font-size" if used for font-size (and "my own font-size" when used for anything else)
+						the rem unit means "The root element's font-size" (rem stands for "root em").
+
+			lh - 		LANE MAGASSÁG ahogy a szülő element magassága változik, úgy változik arányosan ez is.
+			rlh - 		LANE MAGASSÁG, de nem függ a közvetlen szülő element változásától, 
+						hanem a gyökér element változása változtatja meg.
+
+
 
 
