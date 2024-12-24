@@ -1,0 +1,11 @@
+* {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.headfull {
+    color: aquamarine;
+    border: 1 red solid;
+    background-color: blanchedalmond;
+}
