@@ -1,11 +1,91 @@
+/* flexelni.css */
+
+
+
 * {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box ;
+
+    border: 1px red solid;
+
 }
 
-.headfull {
-    color: aquamarine;
-    border: 1 red solid;
-    background-color: blanchedalmond;
+
+body {
+  xxxheight: 600px;
+  xxxwidth: 400px;
+  font-family: sans-serif;
 }
+/* ............fejléc................*/
+
+.headfull {
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    xxxcolor: rgb(121, 69, 219);
+
+    width: 100%;
+    padding: 50px;
+    background:lightcyan;
+
+}
+
+                       /* 
+CTRL + C AMI BEÍRJA IDE EZEKET A MEGJEGYZÉSEKET
+                    CTRL + C 
+    https://stackoverflow.com/questions/69296105/shortcut-commenting-on-internal-css-in-vscode                        */
+
+
+
+
+/* 
+FEJLÉC TARTOZÉKAI
+*/
+
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+button {
+
+    width: 100px;
+    height: 100px;
+}
+
+.three-menu {
+    size: 33px;
+    color: #000000;
+    border: 3px;
+    border-color: aqua;
+  
+}
+
+
+a:link,
+a:visited {
+    color: #0000ff;
+    text-decoration: none;
+
+}
+
+a:hover: {
+    text-decoration:underline;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
