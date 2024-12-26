@@ -1,5 +1,26 @@
 * {
-    xborder: 1px red solid;
+    margin: 0;
+    padding: 40°%;
+    box-sizing: border-box;
+    border: 2px solid green;
+}
 
+
+
+
+body {
+    xxxbackground-image: url("chaotic-god-w-antlers.jpg");
+    display: flex;
+    border: 1px red solid;
+    font-size: 72px;
+    color: rgb(117, 89, 220);
+ 
+}
+
+.basic-container {
+    width: 200px;
+    height: 200px;
+    border: 1px blue solid;
     
+   flex-direction: row;
 }
