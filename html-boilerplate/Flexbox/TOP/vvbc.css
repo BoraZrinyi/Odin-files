@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 40°%;
+    padding: 0;
     box-sizing: border-box;
     border: 2px solid green;
 }
@@ -9,28 +9,47 @@
 
 
 body {
-    background-image: url("chaotic-god-w-antlers.jpg");
-    display: flex;
+    xxxbackground-image: url("chaotic-god-w-antlers.jpg");
+
+    background-image: url("freaktal-orange.JPG");
+
+    background-size: 1600px;
+    xxxxbackground-repeat: repeat;
+    background-blend-mode: overlay;
+    backface-visibility: visible;
+    xxxxxbackground-repeat: round;
+    background-repeat:  2 space;
+    xxdisplay: flex;
     border: 1px red solid;
-    font-size: 72px;
+    font-size: 32px;
     color: rgb(117, 89, 220);
-    justify-content:center; 
-     display: inline;
+    xxjustify-content:space-between; 
+    display: inline;
+    xxxwidth: 600px;
 }
 
-.1-row-container {
-    display:flex;
-    justify-content:enabled; 
-    display: inline;
-}
+
 
 
 .basic-container {
-    width: 200px;
-    height: auto;
+    xxxwidth: 300px;
+    xxxbackground-image: url("logo.png");
     border: 1px blue solid;
+    xxxbackground-color: #f0ffff80;
     flex-direction: row;
     display: inline;
+    xxxjustify-content: space-evenly;
+    width: 200px;
      
 }
 
+.8logo {
+    width: 100px;
+    display:flex;
+    justify-content: column; 
+}
+
+
+logo {
+    width: 200px;
+}
