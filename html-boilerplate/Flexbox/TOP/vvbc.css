@@ -9,18 +9,28 @@
 
 
 body {
-    xxxbackground-image: url("chaotic-god-w-antlers.jpg");
+    background-image: url("chaotic-god-w-antlers.jpg");
     display: flex;
     border: 1px red solid;
     font-size: 72px;
     color: rgb(117, 89, 220);
- 
+    justify-content:center; 
+     display: inline;
 }
+
+.1-row-container {
+    display:flex;
+    justify-content:enabled; 
+    display: inline;
+}
+
 
 .basic-container {
     width: 200px;
-    height: 200px;
+    height: auto;
     border: 1px blue solid;
-    
-   flex-direction: row;
+    flex-direction: row;
+    display: inline;
+     
 }
+
