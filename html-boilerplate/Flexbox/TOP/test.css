@@ -1,0 +1,17 @@
+* {
+    border: 1px red solid;
+    margin: 20px;
+    box-shadow: 5px 5px;
+    padding-inline-start: 1px;
+    padding:0vw;
+
+}
+h1, p {
+    background-color: rgb(230, 230, 230);
+}
+
+em, strong {
+    background-color: azure;
+    display: block;
+}
+
