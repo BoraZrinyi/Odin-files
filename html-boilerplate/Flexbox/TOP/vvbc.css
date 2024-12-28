@@ -1,8 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     box-sizing: border-box;
-    border: 2px solid green;
+    border: 1px solid red;
+    background-color: greenyellow;
 }
 
 
@@ -11,45 +12,57 @@
 body {
     xxxbackground-image: url("chaotic-god-w-antlers.jpg");
 
-    background-image: url("freaktal-orange.JPG");
+    xxxbackground-image: url("freaktal-orange.JPG");
 
-    background-size: 1600px;
-    xxxxbackground-repeat: repeat;
-    background-blend-mode: overlay;
-    backface-visibility: visible;
-    xxxxxbackground-repeat: round;
-    background-repeat:  2 space;
-    xxdisplay: flex;
-    border: 1px red solid;
-    font-size: 32px;
-    color: rgb(117, 89, 220);
-    xxjustify-content:space-between; 
-    display: inline;
-    xxxwidth: 600px;
+    xxxbackground-size: 100rem;
+    background-color: rgb(177, 199, 247);
+   
 }
 
-
-
-
-.basic-container {
-    xxxwidth: 300px;
-    xxxbackground-image: url("logo.png");
-    border: 1px blue solid;
-    xxxbackground-color: #f0ffff80;
-    flex-direction: row;
-    display: inline;
-    xxxjustify-content: space-evenly;
-    width: 200px;
-     
+.fotema {
+    background-color: aquamarine;
 }
 
-.8logo {
-    width: 100px;
+.fotema p {
+    background-color: azure;
+}
+
+.fejlec {
+    background-color: rgb(246, 246, 190);
+    display: flex;
+}
+
+.fejlec p {
+    background-color: azure;
+    
+}
+
+.lablec p {
+    background-color: azure;
+}
+
+.lablec {
+    background-color: rgb(129, 129, 194);
+}
+
+.fohir {
+    width: 400px;
+  
+.kepek {
+    display: inline-block;
+}
+
+.fohir.kepek {
+    display: inline-block;
+}
+
+.menu {
+    background-color: red;
+    border: 5px blue;
     display:flex;
-    justify-content: column; 
+    
 }
 
-
-logo {
-    width: 200px;
+.hirek {
+    background-color: blue;
 }
