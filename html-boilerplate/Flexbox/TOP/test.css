@@ -1,17 +1,62 @@
 * {
-    border: 1px red solid;
-    margin: 20px;
-    box-shadow: 5px 5px;
-    padding-inline-start: 1px;
-    padding:0vw;
-
+    border: 1px rgb(248, 215, 0) solid;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px rgb(4, 82, 13);
+    xxxxpadding-inline-start: 1px;
+    xxxxpadding:0vw;
+    box-sizing: border-box;
+  
+body {
+    xxxxbackground-image:url("chaotic-god-w-antlers.jpg");
+    xxxbackground-image: url(images/Fractal-Pattern-Geometric-Abstract-HD-093.JPG);
+    background-size: 1200px;
+    background-color: black;
+    background-position-x: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    
 }
+
+h1 {
+    border: 2px red solid;
+}
+
 h1, p {
-    background-color: rgb(230, 230, 230);
+    background-color:rgba(0, 251, 255, 0.38);
+    xxxbackground-image: url(images/07-04-2023_17-12-29-1.jpeg) ;
+    background-position: 800px;;
 }
 
 em, strong {
-    background-color: azure;
+    background-color: rgb(255, 253, 228);
     display: block;
 }
+
+div {
+    color: #fff;
+    background-color: #5995da;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5d6063;
+    border-radius: 55px;
+
+    xxwidth: 200px;
+    box-sizing: border-box;
+
+}
+
+.button {
+   
+    
+}
+
+
+
+
+
+
+
 

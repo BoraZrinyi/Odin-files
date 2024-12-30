@@ -1,0 +1,19 @@
+/*0001*/
+* {
+    box-shadow: 1px 1px 1px 1px;
+    border: 1px red solid;
+
+}
+.page {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.button {
+    color: aqua;
+    background-color: rgb(85, 85, 235);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 55px;
+    text-align: center;
+}
