@@ -1,0 +1,26 @@
+HTML vs. CSS vs. JAVASCRIPT
+WHAT'S THE DIFFERNCE?
+
+HTML
+    Content and Layout
+        - Hypertext Markup Language
+        - Create the structure of the websites. 
+        - 
+
+CSS
+    Styling and Look
+    Cascading Style Sheets
+
+JAVASCRIPT
+    Java Script allows you to change CSS and HTML elements on your website after the site has benen loaded.
+        - Interactivity
+        - Menus
+        - Animated buttons
+        - 
+
+
+------------------------
+The main laguage hat you use all depends on your specific project and the busines goals that you have. 
+-------------------------
+
+
