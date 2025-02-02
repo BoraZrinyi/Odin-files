@@ -1,0 +1,7 @@
+HTML
+    - HyperText Markup Language
+        - defines the st4ructure and content of webpages.
+        - Tags: <p>, <h1>, <button>
+        - Elements: <tags> contents </tags>
+        - Void elements: <br>, <img>
+        
