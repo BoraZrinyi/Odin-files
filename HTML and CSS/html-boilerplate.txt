@@ -1,0 +1,19 @@
+1 Every HTML file has to start with <!DOCTYPE html>
+2 Need to be there a <html lang="en"> és a végén egy </html>
+
+VScode shortcut
+    - ! - insert the HEAD into the html file
+    - 
+
+
+
+-------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title> my First Webpage</title>
+        </head>
+
+        <body>
+            <h1>
