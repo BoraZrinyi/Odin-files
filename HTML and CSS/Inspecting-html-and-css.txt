@@ -1,0 +1,18 @@
+Inspecting HTML and CSS
+
+Important!
+Chrome Dev Tools
+
+-element ispector
+-testing
+
+
+
+
+
+OPENING:
+F12
+or RIGHT CLICK : Inspecting
+
+developer.chrome.com/docs/devtools
+
