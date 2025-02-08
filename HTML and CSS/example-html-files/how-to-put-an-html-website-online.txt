@@ -1,0 +1,18 @@
+https://www.youtube.com/watch?v=p1QU3kLFPdg
+
+
+HOW TO PUT A HTML WEBSITE ONLINE
+NOTES
+
+GitHub Pages
+    - Free
+    - Easy to use
+    
+
+1. Upload all the files belong to your website into a github repository.
+2. Settings --> Pages --> select main brach -- > save
+3 --- GitHub Pages publish the site
+4. Open the link in new tab
+5. Add webaddress .com or .org to the page settings.
+
+Ready
