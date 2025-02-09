@@ -1,31 +1,15 @@
 * {
     border: 1px red, solid;
-    xbox-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
 }
 
-.box-one {
-    background-color: aqua;
-    padding: 20px;
-    width: 60px;
-    height: 60px;
-    margin: 50px;
+.full-page-content {
+    display:flex;
 }
 
-.box-two {
-    background-color: rgb(220, 217, 56);
-    padding: 66px;
-    width: 20px;
-    height: 600px;
-    margin: 80px;
-    border-radius: 2em;
-}
-
-.box-three {
-    background-color: rgb(104, 167, 49);
-    padding: 66px;
-    width: 10em;
-    height: 10em;
-    margin: 80px;
-    border-radius: 100%;
+.menu {
+display: flex;
 
 }
