@@ -3,24 +3,617 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Box Model</title>
+    <title>HTML html-tags</title>
     <link rel="stylesheet" href="boxmodel.css">
 </head>
 <body>
-    <h1> I'm a box</h1>
+    <h1> Basics of HTML</h1>
+    <h2>Tags and elements</h2>
 
-    <p>
-        <p class="content-box"> border-sizing: content-box;</p>
-    <p>
-        <p class="border-box">border-sizing: border-box</p>
-    </p>
-    </p>
-
-    <ul>
-        <li>this is a box</li>
-        <li>and all the list item in it are boxes</li>
+    <div class="flex-box"
+    ><ul>
+    <h3>In this page we cover the basics of HTML:</h3>
+        <li>What is HTML?</li>
+        <li>How does HTML work?</li>
+        <li>The history of HTML</li>
+        <li>HTML elements</li>
+        <li>HTML element anatomy</li>
+        <li>What containers are?</li>
+        <li>Void elements</li>
+        <li>The need for a doctype in the head</li>
+        <li>HTML nesting</li>
     </ul>
+    <img src="codecat.jpg" alt="Code cat" width= "400px">
+    
+    </div>
 
-  <p>even <button>buttons</button> and links  are boxes.</p> 
+    <h3>What is HTML?</h3>
+        <p>HTML (Hypertext Markup Language) is a markup language used to create the structure and content of web pages. It's not just a programming language, but rather a standard for formatting content on the World Wide Web. Its a simple yet powerful technology that allows developers to create interactive and dynamic websites, as well as other online applications.</p>
+
+  
+
+    <h3>How does HTML work?</h3>
+        
+            <ol>
+                <li>A developer creates an HTML document by writing code in a text editor or IDE (Integrated Development Environment).</li>
+                <li>The code is then compiled into an HTML file, which is stored on the web server. </li>
+                <li>When a user requests a page from a web browser, the browser sends a request to the web server, which processes the HTML file and generates an HTTP response.</li>
+                <li>The browser renders the HTML document as a web page, displaying the content to the user.</li>
+            </ol>
+
+
+    <h3>The history of HTML</h3>
+        <p>HTML was invented in 1989 by Tim Berners-Lee, a British computer scientist, as the successor to HTTP (Hypertext Transfer Protocol). At the time, web pages were mostly text-based and didn't have much interactivity or dynamic content. Over the years, HTML has evolved to become the foundation of modern websites. It was originally called "World Wide Web" in 1993 and has undergone several revisions since then.</p>
+
+    
+  <h3>HTML elements</h3>
+        <p>HTML consists of elements, which are represented by tags such as:</p>
+
+            <ol>
+                <li>Headings: Use &lt;h1&gt, &lt;h2&gt;, etc. to format headings on the page.</li>
+                <li>Paragraphs: Use &lt;p&gt; for paragraph content and &lt;b&gt; or &lt;em&gt; for bold/italic text.</li>
+                <li>Links: Use &lt;a&gt; for links to other web pages, images, or sections of a webpage.</li>
+                <li>Images: Use &lt;img&gt; for an image file (e.g., alt attribute).</li>
+                <li>Forms: Use &lt;input&gt; and &lt;textarea&gt; to create interactive forms on the page.</li>
+                <li>Tools and menus: Use &lt;a href="./about"&gt;About&lt;/a&gt; or &lt;a href="#"&gt;Contact&lt;/a&gt; for hyperlinks.</li>
+                <li>Databases: Use tags such as &lt;table&gt; and &lt;tr&gt; (tables) to create database-like structures.</li>
+                <li>JavaScript: Use tag attributes like script for JavaScript code, which is used to add interactivity to web pages.</li>
+            </ol>
+        <p>HTML documents are structured in a hierarchical manner using HTML elements. These tags define the structure of the content, and subsequent elements can be added on top of them to create more complex structures.</p>
+
+
+        <h3>List of all the HTML elements</h3>
+        <!-- The "<" code is &lt and the ">" code is &gt-->
+
+<div class="html-tags">
+
+
+<table class="tag-table">
+
+<tbody>
+
+<tr>
+    <th style="width: auto;">Tags</th>
+    <th style="width:50%">Descriptions</th>
+    <th style="width:30%">Examples</th>
+</tr>
+
+
+<tr>
+<td>&lt! -- Comment --&gt </a></td>
+<td>Defines a comment. <br><br>A comment is a text block that runs above or below the rest of your code. It's used to explain what certain parts of your code do, and it can be helpful in understanding how your code works. <br> Remember, comments are not meant to be cryptic or hard-to-read; they're there to help others understand your code and make it easier for developers to work with.</td>
+<td>&lt;!- - This code is doing this: _description_of_your_code_- -&gt;</td>
+</tr>
+
+<tr>
+<td>&lt;!DOCTYPE&gt;</a>&nbsp;</td>
+<td>Defines the document type. <br> <br> The DOCTYPE declaration is a crucial part of HTML, as it specifies the format and structure of your HTML documents. It indicates what kind of HTML file you're creating and helps the parser or compiler understand how to parse and generate the document.</td>
+<td>
+    &lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+&lt;head&gt;<br>
+    &lt;meta charset="UTF-8"&gt;<br>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+    &lt;title&gt;My Page&lt;/title&gt;<br>
+    &lt;link rel="stylesheet" href="mypage.css"&gt;<br>
+</td>
+</tr>
+
+<tr>
+<td>&lt;a&gt;</a></td>
+<td>Defines a hyperlink. <br><br>&lta&gt is a keyword in HTML that defines an anchor element, which is used to create hyperlinks within your web page. It's one of the most commonly used elements in HTML.</td>
+<td>&lt;a href="pic.jpg"&gt;alt-text&lt;/a&gt;</td>
+</tr>
+
+
+<tr>
+<td>&lt;abbr&gt;</a></td>
+<td>Defines an abbreviation or an acronym. <br><br>The `&lt;abbr&gt;` tag, also known as an `acronym`, is a special element in HTML that allows you to create abbreviations or acronyms. It's similar to the `font-awesome` tag, but it uses an alternative syntax for representing common abbreviations like "ASCII" (American Standard Code for Information Interchange)."<br><br></td>
+<td>&lt;abbr title="World Health Organization">WHO</abbr&gt;</td>
+</tr>
+
+
+
+<tr  class="deprecated">
+<td>&lt;acronym&gt;</a></td>
+<td>Defines an acronym.</td>
+<td>Not supported in HTML5. Use abbr&lt;abbr&gt;</a> instead.</td>
+</tr>
+
+
+<tr>
+<td>&lt;address&gt;</a></td>
+<td>Defines contact information for the author/owner of a document. <BR><BR>The &lt;address&gt; element is a container tag that provides contact information for the author or owner of an HTML document. It's used to provide additional details about the author, such as their name, email address, and other relevant information. </td>
+<td> &lt;address&gt;<br>
+        Written by John Doe.&lt;br&gt;<br>
+        Visit us at:&lt;br&gt;<br>
+        www.example.com&lt;br&gt;<br>
+        123 Example Street, City, Country&lt;br&gt;<br>
+        Email: &lta href="mailto:johndoe@example.com"&gtjohndoe@example.com&lt;/a&gt;&lt;br&gt;<br>
+        Phone: &lt;a href="tel:+1234567890"&gt;+1 234 567 890&lt;/a&gt;&lt;br&gt;<br>&lt;/address&gt;</td>
+</tr>
+
+
+<tr  class="deprecated">
+<td>&lt;applet&gt;</a></td>
+<td>Defines an embedded applet. <br>The <applet> tag was used in older versions of HTML to embed Java applets in a web page. </td>
+<td>Not supported in HTML5.<br>Use embed &lt;embed&gt; or object &lt;object&gt; instead.</td>
+</tr>
+
+
+
+<tr>
+<td>142. sor &lt;area&gt;</a></td>
+<td>Defines an area inside an image map</td>
+</tr>
+<tr>
+<td class="html5badge">article&lt;article&gt;</a></td>
+<td>Defines an article</td>
+</tr>
+<tr>
+<td class="html5badge">aside&lt;aside&gt;</a></td>
+<td>Defines content aside from the page content</td>
+</tr>
+<tr>
+<td class="html5badge">audio&lt;audio&gt;</a></td>
+<td>Defines embedded sound content</td>
+</tr>
+<tr>
+<td>b&lt;b&gt;</a></td>
+<td>Defines bold text</td>
+</tr>
+<tr>
+<td>base&lt;base&gt;</a></td>
+<td>Specifies the base URL/target for all relative URLs in a document</td>
+</tr>
+<tr>
+<td>basefont.asp" class="notsupported">&lt;basefont&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Specifies a default color, size, and font for all text in a document</td>
+</tr>
+<tr>
+<td>bdi&lt;bdi&gt;</a></td>
+<td>Isolates a part of text that might be formatted in a different direction 
+from other text outside it</td>
+</tr>
+<tr>
+<td>bdo&lt;bdo&gt;</a></td>
+<td>Overrides the current text direction</td>
+</tr>
+<tr>
+<td>big.asp" class="notsupported">&lt;big&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines big text</td>
+</tr>
+<tr>
+<td>blockquote&lt;blockquote&gt;</a></td>
+<td>Defines a section that is quoted from another source</td>
+</tr>
+<tr>
+<td>body&lt;body&gt;</a></td>
+<td>Defines the document's body</td>
+</tr>
+<tr>
+<td>br&lt;br&gt;</a></td>
+<td>Defines a single line break</td>
+</tr>
+<tr>
+<td>button&lt;button&gt;</a></td>
+<td>Defines a clickable button</td>
+</tr>
+<tr>
+<td>canvas&lt;canvas&gt;</a></td>
+<td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td>
+</tr>
+<tr>
+<td>caption&lt;caption&gt;</a></td>
+<td>Defines a table caption</td>
+</tr>
+<tr>
+<td>center.asp" class="notsupported">&lt;center&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines centered text</td>
+</tr>
+<tr>
+<td>cite&lt;cite&gt;</a></td>
+<td>Defines the title of a work</td>
+</tr>
+<tr>
+<td>code&lt;code&gt;</a></td>
+<td>Defines a piece of computer code</td>
+</tr>
+<tr>
+<td>col&lt;col&gt;</a></td>
+<td>Specifies column properties for each column within a &lt;colgroup&gt; element&nbsp;</td>
+</tr>
+<tr>
+<td>colgroup&lt;colgroup&gt;</a></td>
+<td>Specifies a group of one or more columns in a table for formatting</td>
+</tr>
+  <tr>
+<td>data&lt;data&gt;</a></td>
+<td>Adds a machine-readable 
+translation of a given content</td>
+  </tr>
+<tr>
+<td>datalist&lt;datalist&gt;</a></td>
+<td>Specifies a list of pre-defined options for input controls</td>
+</tr>
+<tr>
+<td>dd&lt;dd&gt;</a></td>
+<td>Defines a description/value of a term in a description list</td>
+</tr>
+<tr>
+<td>del&lt;del&gt;</a></td>
+<td>Defines text that has been deleted from a document</td>
+</tr>
+<tr>
+<td>details&lt;details&gt;</a></td>
+<td>Defines additional details that the user can view or hide</td>
+</tr>
+<tr>
+<td>dfn&lt;dfn&gt;</a></td>
+<td>Specifies a term that is going to be defined within the content</td>
+</tr>
+<tr>
+<td>dialog&lt;dialog&gt;</a></td>
+<td>Defines a dialog box or window</td>
+</tr>
+<tr>
+<td>dir.asp" class="notsupported">&lt;dir&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5. Use ul&lt;ul&gt;</a> instead.<br></span>Defines a directory list</td>
+</tr>
+<tr>
+<td>div&lt;div&gt;</a></td>
+<td>Defines a section in a document</td>
+</tr>
+<tr>
+<td>dl&lt;dl&gt;</a></td>
+<td>Defines a description list</td>
+</tr>
+<tr>
+<td>dt&lt;dt&gt;</a></td>
+<td>Defines a term/name in a description list</td>
+</tr>
+<tr>
+<td>em&lt;em&gt;</a></td>
+<td>Defines emphasized text&nbsp;</td>
+</tr>
+<tr>
+<td>embed&lt;embed&gt;</a></td>
+<td>Defines a container for an external application</td>
+</tr>
+<tr>
+<td>fieldset&lt;fieldset&gt;</a></td>
+<td>Groups related elements in a form</td>
+</tr>
+<tr>
+<td class="html5badge">figcaption&lt;figcaption&gt;</a></td>
+<td>Defines a caption for a &lt;figure&gt; element</td>
+</tr>
+<tr>
+<td class="html5badge">figure&lt;figure&gt;</a></td>
+<td>Specifies self-contained content</td>
+</tr>
+<tr>
+<td>font.asp" class="notsupported">&lt;font&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines font, color, and size for text</td>
+</tr>
+<tr>
+<td>footer&lt;footer&gt;</a></td>
+<td>Defines a footer for a document or section</td>
+</tr>
+<tr>
+<td>form&lt;form&gt;</a></td>
+<td>Defines an HTML form for user input</td>
+</tr>
+<tr>
+<td>frame.asp" class="notsupported">&lt;frame&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5.<br></span>Defines a window (a frame) in a frameset</td>
+</tr>
+<tr>
+<td>frameset.asp" class="notsupported">&lt;frameset&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5.<br></span>Defines a set of frames</td>
+</tr>
+<tr>
+<td>hn&lt;h1&gt; to &lt;h6&gt;</a></td>
+<td> Defines HTML headings</td>
+</tr>
+<tr>
+<td>head&lt;head&gt;</a></td>
+<td>Contains metadata/information for the document</td>
+</tr>
+<tr>
+<td>header&lt;header&gt;</a></td>
+<td>Defines a header for a document or section</td>
+</tr>
+<tr>
+<td>hgroup&lt;hgroup&gt;</a></td>
+<td>Defines a header and related content</td>
+</tr>
+<tr>
+<td>hr&lt;hr&gt;</a></td>
+<td> Defines a thematic change in the content</td>
+</tr>
+<tr>
+<td>html&lt;html&gt;</a></td>
+<td>Defines the root of an HTML document</td>
+</tr>
+<tr>
+<td>i&lt;i&gt;</a></td>
+<td>Defines a part of text in an alternate voice or mood</td>
+</tr>
+<tr>
+<td>iframe&lt;iframe&gt;</a></td>
+<td>Defines an inline frame</td>
+</tr>
+<tr>
+<td>img&lt;img&gt;</a></td>
+<td>Defines an image</td>
+</tr>
+<tr>
+<td>input&lt;input&gt;</a></td>
+<td>Defines an input control</td>
+</tr>
+<tr>
+<td>ins&lt;ins&gt;</a></td>
+<td>Defines a text that has been inserted into a document</td>
+</tr>
+<tr>
+<td>kbd&lt;kbd&gt;</a></td>
+<td>Defines keyboard input</td>
+</tr>
+<tr>
+<td>label&lt;label&gt;</a></td>
+<td>Defines a label&nbsp;for an &lt;input&gt; element</td>
+</tr>
+<tr>
+<td>legend&lt;legend&gt;</a></td>
+<td>Defines a caption for a &lt;fieldset&gt; element</td>
+</tr>
+<tr>
+<td>li&lt;li&gt;</a></td>
+<td>Defines a list item</td>
+</tr>
+<tr>
+<td>link&lt;link&gt;</a></td>
+<td>Defines the relationship between a document and an external resource (most 
+used to link to style sheets)</td>
+</tr>
+<tr>
+<td>main&lt;main&gt;</a></td>
+<td>Specifies the main content of a document</td>
+</tr>
+<tr>
+<td>map&lt;map&gt;</a></td>
+<td>Defines an image map</td>
+</tr>
+<tr>
+<td>mark&lt;mark&gt;</a></td>
+<td>Defines marked/highlighted text</td>
+</tr>
+<tr>
+<td>menu&lt;menu&gt;</a></td>
+<td>Defines an unordered list</td>
+</tr>
+<tr>
+<td>meta&lt;meta&gt;</a></td>
+<td>Defines metadata about an HTML document</td>
+</tr>
+<tr>
+<td>meter&lt;meter&gt;</a></td>
+<td>Defines a scalar measurement within a known range (a gauge)</td>
+</tr>
+<tr>
+<td>nav&lt;nav&gt;</a></td>
+<td>Defines navigation links</td>
+</tr>
+<tr>
+<td>noframes.asp" class="notsupported">&lt;noframes&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5.<br></span>Defines an alternate content for users that do not support frames</td>
+</tr>
+<tr>
+<td>noscript&lt;noscript&gt;</a></td>
+<td>Defines an alternate content for users that do not support 
+client-side scripts</td>
+</tr>
+<tr>
+<td>object&lt;object&gt;</a></td>
+<td>Defines a container for an external application</td>
+</tr>
+<tr>
+<td>ol&lt;ol&gt;</a></td>
+<td>Defines an ordered list</td>
+</tr>
+<tr>
+<td>optgroup&lt;optgroup&gt;</a></td>
+<td>Defines a group of related options in a drop-down list</td>
+</tr>
+<tr>
+<td>option&lt;option&gt;</a></td>
+<td>Defines an option in a drop-down list</td>
+</tr>
+<tr>
+<td>output&lt;output&gt;</a></td>
+<td>Defines the result of a calculation</td>
+</tr>
+<tr>
+<td>p&lt;p&gt;</a></td>
+<td>Defines a paragraph</td>
+</tr>
+<tr>
+<td>param&lt;param&gt;</a></td>
+<td>Defines a parameter for an object</td>
+</tr>
+<tr>
+<td>picture&lt;picture&gt;</a></td>
+<td>Defines a container for multiple image resources</td>
+</tr>
+<tr>
+<td>pre&lt;pre&gt;</a></td>
+<td>Defines preformatted text</td>
+</tr>
+<tr>
+<td>progress&lt;progress&gt;</a></td>
+<td>Represents the progress of a task</td>
+</tr>
+<tr>
+<td>q&lt;q&gt;</a></td>
+<td>Defines a short quotation</td>
+</tr>
+<tr>
+<td>rp&lt;rp&gt;</a></td>
+<td>Defines what to show in browsers that do not support ruby annotations</td>
+</tr>
+<tr>
+<td>rt&lt;rt&gt;</a></td>
+<td>Defines an explanation/pronunciation of characters (for East Asian 
+typography)</td>
+</tr>
+<tr>
+<td>ruby&lt;ruby&gt;</a></td>
+<td>Defines a ruby annotation (for East Asian typography)</td>
+</tr>
+<tr>
+<td>s&lt;s&gt;</a></td>
+<td>Defines text that is no longer correct</td>
+</tr>
+<tr>
+<td>samp&lt;samp&gt;</a></td>
+<td>Defines sample output from a computer program</td>
+</tr>
+<tr>
+<td>script&lt;script&gt;</a></td>
+<td>Defines a client-side script</td>
+</tr>
+<tr>
+<td>search&lt;search&gt;</a></td>
+<td>Defines a search section</td>
+</tr>
+<tr>
+<td>section&lt;section&gt;</a></td>
+<td>Defines a section in a document</td>
+</tr>
+<tr>
+<td>select&lt;select&gt;</a></td>
+<td>Defines a drop-down list</td>
+</tr>
+<tr>
+<td>small&lt;small&gt;</a></td>
+<td>Defines smaller text</td>
+</tr>
+<tr>
+<td>source&lt;source&gt;</a></td>
+<td>Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+</tr>
+<tr>
+<td>span&lt;span&gt;</a></td>
+<td>Defines a section in a document</td>
+</tr>
+<tr>
+<td>strike.asp" class="notsupported">&lt;strike&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5. Use del&lt;del&gt;</a> or s&lt;s&gt;</a> instead.<br></span>Defines strikethrough text</td>
+</tr>
+<tr>
+<td>strong&lt;strong&gt;</a></td>
+<td>Defines important text</td>
+</tr>
+<tr>
+<td>style&lt;style&gt;</a></td>
+<td>Defines style information for a document</td>
+</tr>
+<tr>
+<td>sub&lt;sub&gt;</a></td>
+<td>Defines subscripted text</td>
+</tr>
+<tr>
+<td>summary&lt;summary&gt;</a></td>
+<td>Defines a visible heading for a &lt;details&gt; element</td>
+</tr>
+<tr>
+<td>sup&lt;sup&gt;</a></td>
+<td>Defines superscripted text</td>
+</tr>
+  <tr>
+<td>svg&lt;svg&gt;</a></td>
+<td>Defines a container for SVG graphics</td>
+  </tr>
+<tr>
+<td>table&lt;table&gt;</a></td>
+<td>Defines a table</td>
+</tr>
+<tr>
+<td>tbody&lt;tbody&gt;</a></td>
+<td>Groups the body content in a table</td>
+</tr>
+<tr>
+<td>td&lt;td&gt;</a></td>
+<td>Defines a cell in a table</td>
+</tr>
+  <tr>
+<td>template&lt;template&gt;</a></td>
+<td>Defines a container for content that should be hidden when the page loads</td>
+  </tr>
+<tr>
+<td>textarea&lt;textarea&gt;</a></td>
+<td>Defines a multiline input control (text area)</td>
+</tr>
+<tr>
+<td>tfoot&lt;tfoot&gt;</a></td>
+<td>Groups the footer content in a table</td>
+</tr>
+<tr>
+<td>th&lt;th&gt;</a></td>
+<td>Defines a header cell in a table</td>
+</tr>
+<tr>
+<td>thead&lt;thead&gt;</a></td>
+<td>Groups the header content in a table</td>
+</tr>
+<tr>
+<td>time&lt;time&gt;</a></td>
+<td>Defines a specific time (or datetime)</td>
+</tr>
+<tr>
+<td>title&lt;title&gt;</a></td>
+<td>Defines a title for the document</td>
+</tr>
+<tr>
+<td>tr&lt;tr&gt;</a></td>
+<td>Defines a row in a table</td>
+</tr>
+<tr>
+<td>track&lt;track&gt;</a></td>
+<td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+</tr>
+<tr>
+<td><a class="notsupported" href="tag_tt&lt;tt&gt;</a></td>
+<td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines teletype text</td>
+</tr>
+<tr>
+<td>u&lt;u&gt;</a></td>
+<td>Defines some text that is unarticulated and styled differently from normal 
+text</td>
+</tr>
+<tr>
+<td>ul&lt;ul&gt;</a></td>
+<td>Defines an unordered list</td>
+</tr>
+<tr>
+<td>var&lt;var&gt;</a></td>
+<td>Defines a variable</td>
+</tr>
+<tr>
+<td>video&lt;video&gt;</a></td>
+<td>Defines embedded video content</td>
+</tr>
+<tr>
+<td>wbr&lt;wbr&gt;</a></td>
+<td>Defines a possible line-break</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+
+   
 </body>
 </html>
